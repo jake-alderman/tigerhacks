@@ -60,5 +60,16 @@ def calculate_caloric_maintenance(bmr, activity_level):
         return float(bmr) * activity_multipliers[activity_level]
     else:
         print('na')
+
+
 #divide pounds wanting to lose by weeks 
 #to lose a pound a week you have to be in 500 deficite per day 
+def calculateDeficit(maintnence, timeline, goalweight, weight):
+    goal = int(weight) - int(goalweight)
+    lbs = float(goal) / float(timeline)
+
+    defPerDay = float(lbs) * 3500 / (7)
+
+    return float(maintnence) - defPerDay
+
+

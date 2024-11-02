@@ -1,4 +1,4 @@
-from functions import makeFoodObjects, calculateBMI, getInfo , calculate_caloric_maintenance, calculatebmr
+from functions import makeFoodObjects, calculateBMI, getInfo , calculate_caloric_maintenance, calculatebmr, calculateDeficit
 
 
 Meats = [['Chicken',165,3.5], ['Steak',155,3.5], ['Salmon',175,3.5], ['Beef',210,3.5]]
@@ -15,18 +15,6 @@ carb = makeFoodObjects(Carbs)
 vegetable = makeFoodObjects(Vegetables)
 fruit = makeFoodObjects(Fruits)
 
-
-for food in meat:
-    print(food.getName())
-'''
-for food in carb:
-    print(food.getName())
-for food in vegetable:
-    print(food.getName())
-
-for food in fruit:
-    print(food.getName())
-'''
 #print(calculateBMI(67,135))
 info = getInfo()
 
@@ -34,3 +22,4 @@ bmr = calculatebmr(info[0], info[6], info[1], info[2])
 calories = calculate_caloric_maintenance(bmr, int(info[3]))
 
 print(calories)
+print(calculateDeficit(calories, info[5], info[4], info[1]))
