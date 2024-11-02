@@ -1,2 +1,68 @@
-- App that takes your data and spits out a diet for you
-    -
+App that takes your data and spits out a diet for you
+
+    gain or lose weight (target weight)
+    male or female
+    Weight (pounds)
+    height (Inches)
+    Calculate BMI (weight * 703 / height in inches/height in inches)
+    Daily activity level (1-5)
+    goal weight (pounds)
+     timeline (have cutoff) (have restrictions based on BMI) 
+
+Function-based on BMI and timeline   
+     diet 
+     workout plan
+
+
+Dictionary of weight loss Meals “value is food name key is calorie”
+	Meats 
+Steak
+Chicken
+Salmon
+Beef
+	Carbs
+Rice
+Pasta
+Bread
+Tortilla 	
+	Vegetables
+Broccoli
+Carrot
+Corn
+Lettuce 
+	fruits 
+Apple
+Banana
+Strawberry
+Orange
+	water
+Dictionary of weight gaining meals “” 
+
+Function that makes the meals (calories per day)
+    Divide by 2 after subtracting fruit from breakfast
+    Randomly select meat/carb/vegetable/ fruit
+    Under specific calories 
+
+Function to calculate BMI
+    Returns BMI
+    Function to know how many calories a day (BMI, activity level, age)
+    Find maintenance calories
+    Add calories based on BMI, and activity level, age 
+
+Main function
+    Full while loop
+    Take in all the parameters needed 
+    Call all the functions needed 
+    First call BMI
+    Call calorie calculator
+    Call meal maker
+
+
+
+
+ 
+
+
+
+
+
